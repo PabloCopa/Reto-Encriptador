@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Encriptador</title>
+    <link rel="shortcut icon" href="img/alura-logo.svg" type="icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="container">
+        <header class="header">
+            <img class="logo" src="img/alura-logo.svg" alt="Alura">
+        </header>
+
+      <main class="main_container">
+        <form class="form">
+          <textarea class="form_frase" id="frase" placeholder="Ingrese el texto aqui" required></textarea>
+          <div class="form_sugerencia">
+            <span class="form_icon"><img src="img/icon.svg"></span>
+            <p class="form_parrafo">Solo letras minúsculas y sin acentos</p>
+          </div>
+
+          <div class="btn_container">
+            <input class="btn btn-encriptar" id="btn-encriptar" type="button" value="Encriptar">
+            <input class="btn btn-desencriptar" id="btn-desencriptar" type="button" value="Desencriptar">
+          </div>
+        </form>
+
+        <section class="desencriptar">
+          <div class="desencriptar_mensaje">
+            <img class="desencriptar_mensaje_img-muñeco" src="img/muñeco.svg" alt="Muñeco busqueda">
+            <h2 class="desencriptar_mensaje_titulo">Ningún mensaje fue encontrado</h2>
+            <p class="desencriptar_mensaje_parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+
+          <div class="desencriptar_resultado">
+            <textarea class="frase-encriptada" id="frase-encriptada" readonly></textarea>
+            <input class="btn btn-copiar" id="btn-copiar" type="button" value="Copiar">
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+
+        <h3>Links Pablo Copa</h3>
+        <a href="https://www.linkedin.com/in/pablo-copa/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/PabloCopa" class="fa fa-github"></a>
+
+      </footer>
+    </div>
+
+   <script src="script.js"></script>
+  </body>
+</html>
